@@ -1,0 +1,50 @@
+.app-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  // background-color: $clr3;
+  width: 100%;
+  padding: rem(73px) rem(24px);
+  color: $font-clr1;
+  font-size: rem(18px);
+
+  .inner-header {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: rem(1110px);
+    height: 100%;
+
+    .logo {
+      margin-right: 5rem;
+    }
+
+    .header-nav {
+      display: none;
+
+      @include for-wide-layout {
+        display: flex;
+        align-items: center;
+        gap: rem(40px);
+        flex-grow: 1;
+
+        .contact {
+          border: 2px solid $clr4;
+          border-radius: 6rem;
+          padding: rem(10px) 2rem;
+          margin-left: auto;
+        }
+      }
+    }
+    .hamburger {
+      display: initial;
+      margin-left: auto;
+      height: 100%;
+
+      @include for-wide-layout {
+        display: none;
+      }
+    }
+  }
+}

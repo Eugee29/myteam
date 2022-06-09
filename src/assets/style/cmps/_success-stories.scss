@@ -1,0 +1,113 @@
+.success-stories {
+  background-color: $clr1;
+  min-height: rem(1410px);
+
+  width: 100%;
+  padding: rem(140px) rem(24px) rem(164px);
+  position: relative;
+
+  .success-stories-header {
+    max-width: rem(932px);
+    margin: auto;
+    font-size: 2rem;
+    margin-bottom: rem(48px);
+
+    .success-stories-title {
+      text-align: center;
+      font-family: Livivic-Bold;
+      color: $font-clr1;
+
+      @include for-wide-layout {
+        font-size: 3rem;
+      }
+
+      span {
+        color: $font-clr2;
+      }
+    }
+
+    @include for-wide-layout {
+      margin-bottom: rem(56px);
+    }
+  }
+  .stories {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+
+    @include for-wide-layout {
+      flex-direction: row;
+      gap: rem(30px);
+    }
+
+    .story {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: rem(36px);
+
+      .quotes {
+        position: absolute;
+        top: 0;
+      }
+
+      .story-text {
+        max-width: rem(350px);
+        line-height: rem(25px);
+        font-size: rem(15px);
+        color: $font-clr1;
+        margin-bottom: 1rem;
+        z-index: 10;
+
+        @include for-wide-layout {
+          margin-bottom: rem(24px);
+        }
+      }
+
+      .author {
+        font-family: Livivic-Bold;
+        margin-bottom: rem(36px);
+        font-size: rem(18px);
+        color: $font-clr2;
+
+        @include for-wide-layout {
+          margin-bottom: rem(52px);
+        }
+      }
+    }
+
+    .author-avatar-container {
+      height: 62px;
+      width: 62px;
+      border-radius: 50%;
+      // margin-bottom: 21px;
+
+      .author-avatar {
+        border: solid 2px $clr2;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .bg-svg-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .bg-svg-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  @include for-wide-layout {
+    padding: rem(140px) rem(24px);
+    min-height: rem(745px);
+  }
+}

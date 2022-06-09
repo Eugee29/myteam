@@ -1,0 +1,31 @@
+.find-talent {
+  background-color: $clr3;
+  color: $font-clr1;
+  padding: rem(250px) 0;
+  // justify-content: space-between;
+
+  .inner-container {
+    width: rem(1440px);
+    display: flex;
+    gap: rem(30px);
+    margin: auto;
+
+    .title {
+      font-family: Livivic-Bold;
+      font-size: rem(100px);
+      max-width: rem(635px);
+
+      span {
+        color: $font-clr3;
+      }
+    }
+
+    .paragraph {
+      font-family: Livivic-SemiBold;
+      align-self: flex-end;
+      width: rem(445px);
+      font-size: rem(18px);
+      line-height: rem(28px);
+    }
+  }
+}
