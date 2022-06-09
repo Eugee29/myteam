@@ -1,13 +1,14 @@
 .find-talent {
   background-color: $clr3;
   color: $font-clr1;
-  padding: rem(250px) 0;
+  padding: rem(250px) rem(24px);
 
   .inner-container {
     max-width: rem(1110px);
     display: flex;
     gap: rem(30px);
     margin: auto;
+    flex-direction: column;
 
     .title {
       font-family: Livivic-Bold;
@@ -25,6 +26,10 @@
       width: rem(445px);
       font-size: rem(18px);
       line-height: rem(28px);
+    }
+
+    @include for-wide-layout {
+      flex-direction: row;
     }
   }
 }

@@ -1,6 +1,6 @@
 import { AppHeader } from './cmps/app-header'
 import { FindTalent } from './cmps/find-talent'
-import { SuccessStories } from './cmps/sucess-sotories'
+import { SuccessStories } from './cmps/success-stories'
 
 export const App = () => {
   return (

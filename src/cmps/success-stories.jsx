@@ -7,8 +7,6 @@ import { ReactComponent as QuotesSvg } from '../assets/svg/icon-quotes.svg'
 export const SuccessStories = () => {
   const stories = getStories()
 
-  console.log(stories)
-
   return (
     <section className="success-stories">
       <header className="success-stories-header">
