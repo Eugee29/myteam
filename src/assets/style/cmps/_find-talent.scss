@@ -2,10 +2,9 @@
   background-color: $clr3;
   color: $font-clr1;
   padding: rem(250px) 0;
-  // justify-content: space-between;
 
   .inner-container {
-    width: rem(1440px);
+    max-width: rem(1110px);
     display: flex;
     gap: rem(30px);
     margin: auto;
@@ -13,7 +12,7 @@
     .title {
       font-family: Livivic-Bold;
       font-size: rem(100px);
-      max-width: rem(635px);
+      max-width: rem(620px);
 
       span {
         color: $font-clr3;
