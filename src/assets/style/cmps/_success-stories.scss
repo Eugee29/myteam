@@ -1,9 +1,9 @@
 .success-stories {
   background-color: $clr1;
   min-height: rem(1410px);
-
   width: 100%;
-  padding: rem(140px) rem(24px) rem(164px);
+  padding-top: rem(140px);
+  padding-bottom: rem(164px);
   position: relative;
 
   .success-stories-header {
@@ -83,7 +83,6 @@
       height: 62px;
       width: 62px;
       border-radius: 50%;
-      // margin-bottom: 21px;
 
       .author-avatar {
         border: solid 2px $clr2;
@@ -107,7 +106,8 @@
   }
 
   @include for-wide-layout {
-    padding: rem(140px) rem(24px);
+    padding-bottom: rem(140px);
+    // padding: rem(140px) rem(24px);
     min-height: rem(745px);
   }
 }

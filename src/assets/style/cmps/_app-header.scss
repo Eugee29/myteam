@@ -4,15 +4,19 @@
   left: 0;
   z-index: 1000;
   width: 100%;
-  padding: rem(73px) rem(24px);
+  padding-top: rem(48px);
+  padding-bottom: rem(48px);
   color: $font-clr1;
   font-size: rem(18px);
+
+  @include for-wide-layout {
+    padding-top: rem(73px);
+    padding-bottom: rem(73px);
+  }
 
   .inner-header {
     display: flex;
     align-items: center;
-    margin: auto;
-    max-width: rem(1110px);
     height: 100%;
 
     .logo {

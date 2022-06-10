@@ -8,7 +8,7 @@ export const SuccessStories = () => {
   const stories = getStories()
 
   return (
-    <section className="success-stories">
+    <section className="success-stories main-layout">
       <header className="success-stories-header">
         <h1 className="success-stories-title">
           Delivering real results for top companies. Some of our

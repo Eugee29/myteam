@@ -1,5 +1,15 @@
-.main-layout {
+.container-layout {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.main-layout {
+  padding-left: rem(24px);
+  padding-right: rem(24px);
+
+  @include for-wide-layout {
+    padding-left: rem(165px);
+    padding-right: rem(165px);
+  }
 }

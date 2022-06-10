@@ -5,7 +5,7 @@ import { SuccessStories } from './cmps/success-stories'
 export const App = () => {
   return (
     <div className="App">
-      <div className="main-layout">
+      <div className="container-layout">
         <AppHeader />
         <FindTalent />
         <SuccessStories />

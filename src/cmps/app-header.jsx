@@ -3,7 +3,7 @@ import { ReactComponent as HamburgerSvg } from '../assets/svg/icon-hamburger.svg
 
 export const AppHeader = () => {
   return (
-    <header className="app-header">
+    <header className="app-header main-layout">
       <div className="inner-header">
         <LogoSvg className="logo" />
         <nav className="header-nav">
