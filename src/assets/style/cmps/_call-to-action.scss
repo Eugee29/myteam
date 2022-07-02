@@ -1,15 +1,29 @@
 .call-to-action {
   background-color: $clr6;
   display: flex;
-  padding: rem(76px) rem(260px);
+  padding: rem(83px) rem(24px);
   align-items: center;
   justify-content: space-between;
   color: $font-clr4;
   position: relative;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow-y: hidden;
+
+  @include for-wide-layout {
+    flex-direction: row;
+    padding: rem(76px) rem(260px);
+  }
 
   .title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: Livivic-Bold;
+    text-align: center;
+
+    @include for-wide-layout {
+      font-size: 3rem;
+      text-align: initial;
+    }
   }
 
   .contact {
@@ -22,5 +36,10 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    transform: translateY(15%);
+
+    @include for-wide-layout {
+      transform: initial;
+    }
   }
 }
