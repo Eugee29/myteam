@@ -33,9 +33,7 @@
         flex-grow: 1;
 
         .contact {
-          border: 2px solid $clr4;
-          border-radius: 6rem;
-          padding: rem(10px) 2rem;
+          @include nice-btn;
           margin-left: auto;
         }
       }

@@ -8,11 +8,13 @@ export const FindTalent = () => {
         <h1 className="title">
           Find the best <span>talent</span>
         </h1>
-        <p className="paragraph">
-          Finding the right people and building high performing teams can be
-          hard. Most companies aren’t tapping into the abundance of global
-          talent. We’re about to change that.
-        </p>
+        <div className="paragraph-container">
+          <div className="bg-decoration"></div>
+          <p className="paragraph">
+            Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into
+            the abundance of global talent. We’re about to change that.
+          </p>
+        </div>
       </div>
       <BottomSvg className="bottom-svg" />
       <LeftSvg className="left-svg" />

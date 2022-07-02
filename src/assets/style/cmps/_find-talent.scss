@@ -38,15 +38,38 @@
       }
     }
 
-    .paragraph {
-      font-family: Livivic-SemiBold;
-      max-width: rem(445px);
-      font-size: rem(15px);
-      line-height: rem(28px);
+    .paragraph-container {
+      align-self: stretch;
+      display: flex;
+      justify-content: center;
+
+      .bg-decoration {
+        display: none;
+      }
 
       @include for-wide-layout {
-        font-size: rem(18px);
-        align-self: flex-end;
+        position: relative;
+
+        .bg-decoration {
+          display: initial;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 4px;
+          width: 50px;
+          background-color: $clr7;
+        }
+      }
+
+      .paragraph {
+        max-width: rem(445px);
+        font-size: rem(15px);
+        line-height: rem(28px);
+
+        @include for-wide-layout {
+          font-size: rem(18px);
+          align-self: flex-end;
+        }
       }
     }
 

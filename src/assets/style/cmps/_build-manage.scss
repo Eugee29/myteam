@@ -1,0 +1,61 @@
+.build-manage {
+  background-color: $clr5;
+  padding-top: rem(140px);
+  padding-bottom: rem(140px);
+  position: relative;
+
+  .inner-container {
+    position: relative;
+    display: flex;
+    padding-top: rem(54px);
+    gap: rem(125px);
+
+    .title {
+      color: $font-clr1;
+      font-size: 3rem;
+    }
+
+    .highlight-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .highlight {
+        display: flex;
+        gap: rem(23px);
+        width: rem(540px);
+
+        .highlight-text {
+          .highlight-title {
+            font-size: rem(18px);
+            line-height: rem(28px);
+            color: $font-clr3;
+            margin-bottom: 1rem;
+          }
+
+          .highlight-details {
+            font-size: rem(15px);
+            line-height: rem(25px);
+            color: $font-clr1;
+          }
+        }
+      }
+    }
+
+    .bg-decoration {
+      height: 4px;
+      width: 50px;
+      background-color: $clr6;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .bg-svg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateX(50%);
+  }
+}

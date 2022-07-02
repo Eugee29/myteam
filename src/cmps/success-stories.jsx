@@ -19,15 +19,10 @@ export const SuccessStories = () => {
         {stories.map((story) => (
           <li className="story" key={story._id}>
             <QuotesSvg className="quotes" />
-            {console.log(story.avatar)}
             <p className="story-text">{story.story}</p>
             <h2 className="author">{story.author}</h2>
             <div className="author-avatar-container">
-              <img
-                className="author-avatar"
-                src={require(`../assets/img/${story._id}.jpg`)}
-                alt={story.author}
-              />
+              <img className="author-avatar" src={require(`../assets/img/${story._id}.jpg`)} alt={story.author} />
             </div>
           </li>
         ))}

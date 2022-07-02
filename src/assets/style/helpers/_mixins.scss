@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin nice-btn {
+  border: 2px solid $clr4;
+  border-radius: 6rem;
+  padding: rem(13px) 2rem;
+}
