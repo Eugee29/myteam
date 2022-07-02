@@ -1,36 +1,80 @@
 .build-manage {
   background-color: $clr5;
-  padding-top: rem(140px);
-  padding-bottom: rem(140px);
+  padding-top: rem(64px);
+  padding-bottom: rem(64px);
   position: relative;
+  overflow-x: hidden;
 
   .inner-container {
     position: relative;
     display: flex;
+    flex-direction: column;
     padding-top: rem(54px);
     gap: rem(125px);
+    align-items: center;
+    z-index: 1;
+
+    @include for-wide-layout {
+      flex-direction: row;
+      padding-top: rem(140px);
+      padding-bottom: rem(140px);
+      align-items: initial;
+    }
 
     .title {
       color: $font-clr1;
-      font-size: 3rem;
+      font-size: 2rem;
+      font-family: Livivic-Bold;
+      max-width: rem(445px);
+      padding-right: 100px;
+      align-self: flex-start;
+
+      @include for-wide-layout {
+        padding-right: initial;
+        font-size: 3rem;
+        align-self: initial;
+      }
     }
 
     .highlight-list {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 3rem;
+
+      @include for-wide-layout {
+        gap: 2rem;
+      }
 
       .highlight {
         display: flex;
-        gap: rem(23px);
-        width: rem(540px);
+        gap: 1rem;
+        max-width: rem(540px);
+        flex-direction: column;
+        align-items: center;
+
+        @include for-wide-layout {
+          flex-direction: row;
+          align-items: initial;
+          gap: rem(23px);
+        }
 
         .highlight-text {
+          text-align: center;
+
+          @include for-wide-layout {
+            text-align: initial;
+          }
+
           .highlight-title {
             font-size: rem(18px);
             line-height: rem(28px);
             color: $font-clr3;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
+            font-family: Livivic-Bold;
+
+            @include for-wide-layout {
+              margin-bottom: 1rem;
+            }
           }
 
           .highlight-details {
@@ -55,7 +99,12 @@
   .bg-svg {
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 0;
     transform: translateX(50%);
+
+    @include for-wide-layout {
+      top: initial;
+      bottom: 0;
+    }
   }
 }

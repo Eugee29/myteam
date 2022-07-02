@@ -1,0 +1,26 @@
+.call-to-action {
+  background-color: $clr6;
+  display: flex;
+  padding: rem(76px) rem(260px);
+  align-items: center;
+  justify-content: space-between;
+  color: $font-clr4;
+  position: relative;
+
+  .title {
+    font-size: 3rem;
+    font-family: Livivic-Bold;
+  }
+
+  .contact {
+    @include nice-btn;
+    color: $font-clr4;
+    border-color: $font-clr4;
+  }
+
+  .bg-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
