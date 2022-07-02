@@ -35,22 +35,6 @@ export const AppFooter = () => {
         </a>
       </section>
       <small className="copyright">Copyright 2020, All Rights Reserved</small>
-
-      {/* <section className="brand">
-        <div className="logo-container">
-          <LogoSvg className="logo" />
-        </div>
-      </section>
-      <section className="contact-info">
-        <small>
-          987 Hillcrest Lane <br />
-          Irvine, CA
-          <br />
-          California 92714
-          <br />
-          Call Us: 949-833-7432
-        </small>
-      </section> */}
     </footer>
   )
 }

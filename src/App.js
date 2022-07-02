@@ -14,7 +14,7 @@ export const App = () => {
           <AppHeader />
           <FindTalent />
           <BuildManage />
-          <SuccessStories />
+          {/* <SuccessStories /> */}
           <CallToAction />
           <AppFooter />
         </div>
