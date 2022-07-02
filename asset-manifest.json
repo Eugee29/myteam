@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Eugee29/myteam/static/css/main.2b6b7e57.css",
-    "main.js": "/Eugee29/myteam/static/js/main.c5ba366e.js",
+    "main.js": "/Eugee29/myteam/static/js/main.a0dfcb32.js",
     "static/media/Livvic-Bold.ttf": "/Eugee29/myteam/static/media/Livvic-Bold.089af19ac41ce144a96c.ttf",
     "static/media/Livvic-SemiBold.ttf": "/Eugee29/myteam/static/media/Livvic-SemiBold.c79c53d29c413ab69adb.ttf",
     "static/media/s1.jpg": "/Eugee29/myteam/static/media/s1.78fc482c1b331d912ca1.jpg",
@@ -24,10 +24,10 @@
     "static/media/bg-pattern-home-4-about-3.svg": "/Eugee29/myteam/static/media/bg-pattern-home-4-about-3.aacd4e03b04df33749baa362f4612832.svg",
     "static/media/icon-hamburger.svg": "/Eugee29/myteam/static/media/icon-hamburger.fc176eb243d0591583eb436d00f4c10e.svg",
     "main.2b6b7e57.css.map": "/Eugee29/myteam/static/css/main.2b6b7e57.css.map",
-    "main.c5ba366e.js.map": "/Eugee29/myteam/static/js/main.c5ba366e.js.map"
+    "main.a0dfcb32.js.map": "/Eugee29/myteam/static/js/main.a0dfcb32.js.map"
   },
   "entrypoints": [
     "static/css/main.2b6b7e57.css",
-    "static/js/main.c5ba366e.js"
+    "static/js/main.a0dfcb32.js"
   ]
 }
