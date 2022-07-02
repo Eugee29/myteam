@@ -1,0 +1,83 @@
+.app-footer {
+  background-color: $clr8;
+  color: $font-clr1;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: grid;
+  align-items: center;
+  gap: 1.5rem rem(125px);
+  grid-template:
+    'logo'
+    'footer-nav'
+    'contact'
+    'socials'
+    'copyright';
+
+  justify-content: center;
+
+  @include for-wide-layout {
+    justify-content: initial;
+    grid-template:
+      'logo contact socials'
+      'footer-nav contact copyright';
+    grid-template-columns: auto 1fr 1fr;
+  }
+
+  .logo-container {
+    grid-area: logo;
+    justify-self: center;
+
+    @include for-wide-layout {
+      justify-self: initial;
+    }
+  }
+
+  .footer-nav {
+    grid-area: footer-nav;
+    display: flex;
+    font-size: rem(18px);
+    line-height: rem(28px);
+    gap: rem(40px);
+    justify-content: center;
+
+    @include for-wide-layout {
+      justify-content: initial;
+    }
+  }
+
+  .contact-info {
+    grid-area: contact;
+    font-size: rem(15px);
+    line-height: rem(25px);
+    opacity: 0.6;
+    text-align: center;
+    margin-bottom: rem(36px);
+
+    @include for-wide-layout {
+      justify-content: initial;
+      text-align: initial;
+      margin: initial;
+    }
+  }
+
+  .socials {
+    grid-area: socials;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+
+    @include for-wide-layout {
+      justify-content: flex-end;
+    }
+  }
+
+  .copyright {
+    grid-area: copyright;
+    font-size: rem(15px);
+    line-height: rem(25px);
+    opacity: 0.6;
+    justify-self: end;
+    text-align: center;
+  }
+}

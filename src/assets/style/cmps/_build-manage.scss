@@ -15,6 +15,7 @@
     z-index: 1;
 
     @include for-wide-layout {
+      justify-content: space-between;
       flex-direction: row;
       padding-top: rem(140px);
       padding-bottom: rem(140px);

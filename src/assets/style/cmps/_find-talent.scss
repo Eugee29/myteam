@@ -5,6 +5,7 @@
   padding-top: rem(160px);
   padding-bottom: rem(197px);
   text-align: center;
+  overflow-x: hidden;
 
   @include for-wide-layout {
     text-align: initial;
@@ -20,6 +21,7 @@
 
     @include for-wide-layout {
       gap: rem(30px);
+      justify-content: space-between;
     }
 
     .title {
